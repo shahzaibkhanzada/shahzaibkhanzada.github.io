@@ -1,0 +1,21 @@
+.btn-danger{
+
+
+    background-color: blue;
+}
+    .btn-primary:hover{
+
+         background-color: pink;
+    }
+
+    .btn-danger:hover{
+
+
+        background-color: skyblue;
+    }
+    .col{
+
+        background-color: gray;
+        border: 2px solid black;
+        padding: 2%;
+    }
