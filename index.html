@@ -1,89 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
+
+    <title>moorad travel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <script src="jqueery.js"></script>
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="homepic.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
+    <!-- 3.3.1 jquery.min.js -->
+    <!-- <script src="js\jquery.min.js"></script> -->
+    <link rel="stylesheet" href="w3school.css">
+</head>
+
+<style>
+    .w3-content img {
+        max-height: 500px;
+        position: relative;
+    }
+</style>
 
 
+<body style="background-color: #f2ffe6">
 
-<body>
+    <div id="header"></div>
+    <div class="w3-container">
 
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+
+        <div class="w3-content w3-section" style="max-width:100%">
+            <img class="mySlides w3-animate-top" src="images\aus1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="images\aus2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-left" src="images\canada1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-top" src="images\canada3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="images\canada4.jpg" style="width:100%">
+
+            <img class="mySlides w3-animate-right" src="images\dubai2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-top" src="images\dubai3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="images\img1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-left" src="images\img2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-right" src="images\img4.jpg" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="images\img6.jpg" style="width:100%">
+            <img class="mySlides w3-animate-left" src="images\img7.jpg" style="width:100%">
+            <img class="mySlides w3-animate-right" src="images\img8.jpg" style="width:100%">
+            <img class="mySlides w3-animate-top" src="images\img9.jpg" style="width:100%">
+
+            <img class="mySlides w3-animate-left" src="images\london1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-right" src="images\london2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-top" src="images\london3.jpg" style="width:100%">
+
+            <img class="mySlides w3-animate-left" src="images\pic4.jpg" style="width:100%">
+            <img class="mySlides w3-animate-right" src="images\pic6.jpg" style="width:100%">
+            <img class="mySlides w3-animate-top" src="images\pic8.jpg" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="images\pic9.jpg" style="width:100%">
+
+            <img class="mySlides w3-animate-left" src="images\pic12.jpg" style="width:100%">
+            <img class="mySlides w3-animate-right" src="images\pic15.jpg" style="width:100%">
+            <img class="mySlides w3-animate-top" src="images\switzerland1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-bottom" src="images\switzerland2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-left" src="images\switzerland3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-right" src="images\switzerland4.jpg" style="width:100%">
+        </div>
+    </div>
+    <br> <br> <br><br><br><br>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images\Bangkok_200x200.jpg">
+                <div class="text">BangKok</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\Bangkok1.jpg">
+                <div class="text">BangKok</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\China.jpeg">
+                <div class="text">China</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\Malaysia1.jpg">
+                <div class="text">Malaysia</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\japan.jpg">
+                <div class="text">Japan</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\Thailand.jpg">
+                <div class="text">Thailand</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\Malaysia.jpeg">
+                <div class="text">Malaysia</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\hong-kong.png">
+                <div class="text">Hong-kong</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\China2.jpg">
+                <div class="text">China</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\China1.jpg">
+                <div class="text">China</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\greece.jpg">
+                <div class="text">Greece</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\greece1.jpg">
+                <div class="text">Greece</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\singapore.2.jpg">
+                <div class="text">Singapore</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\singapore.jpg">
+                <div class="text">Singapore</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images\Bangkok2.jpg">
+                <div class="text">Bangkok</div>
+            </div>
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+    <br><br><br><br>
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
+    </script>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="jssor.slider.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $AutoPlaySteps: 4,
+                $SlideDuration: 160,
+                $SlideWidth: 200,
+                $SlideSpacing: 3,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $Steps: 5
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+
+        });
+    </script>
+
+    <div class="bg">
+        <h1 class="heading1">POPULAR DESTINATIONS</h1>
+        <h3 class="heading3">CHOOSE YOUR NEXT DESTINATION </h3>
+
+        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:150px;overflow:hidden;visibility:hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="spin.svg" />
+            </div>
+
+            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
+                <div>
+                    <img data-u="image" src="images\greece.jpg" />
+                    <div class="text">Greece</div>
                 </div>
-              </nav>
+                <div>
+                    <img data-u="image" src="images\greece1.jpg" />
+                    <div class="text">Greece</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\singapore.2.jpg" />
+                    <div class="text">Singapore</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\singapore.jpg" />
+                    <div class="text">Singapore</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\Malaysia.jpeg" />
+                    <div class="text">Malaysia</div>
+                </div>
+                <div>
 
- <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+                    <img data-u="image" src="images\Malaysia1.jpg" />
+                    <div class="text">Malaysia</div>
+                </div>
 
-<button type="button" class="btn btn-link">Link</button>
- -->
+                <div>
+                    <img data-u="image" src="images\hong-kong.png" />
+                    <div class="text">Hong-kong</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\China2.jpg" />
+                    <div class="text">China</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\china1.jpg" />
+                    <div class="text">China</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\China.jpeg" />
+                    <div class="text">China</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\Bangkok1.jpg" />
+                    <div class="text">BangKok</div>
+                </div>
 
-<div id="container">
-<div class="row">
-                <div class="col col-md-8 col-sm-6  col-lg-12" >
-                        1
-                         </div>
+                <div>
+                    <img data-u="image" src="images\Bangkok.jpg" />
+                    <div class="text">BangKok</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\japan1.jpg" />
+                    <div class="text">Japan</div>
 
-                       <div class="col col-md-2  col-sm-2 col-lg-12">
-                              2
-                       </div>
-                  <div class="col col-md-2  col-sm-2   col-lg-12">
-                          3
-                     </div>
-        
-</div>
-</div>
+                </div>
+                <div>
+                    <img data-u="image" src="images\japan.jpg" />
+                    <div class="text">Japan</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                </div>
+                <div>
+                    <img data-u="image" src="images\Bangkok2.jpg" />
+                    <div class="text">BangKok</div>
+
+                </div>
+                <div>
+                    <img data-u="image" src="images\Thailand.jpg" />
+                    <div class="text">Thailand</div>
+
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+                </svg>
+                </div>
+            </div>
+            <!-- Arrow Navigator -->
+            <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+            </svg>
+            </div>
+            <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+            </svg>
+            </div>
+
+        </div>
+    </div>
+
+    <h1 class="glow">Why Moorad Travel</h1>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="hotel_booking">
+                    <h3>International Transport</h3>
+                    <img src="travel transport1.jpg" class="img-responsive" alt="Image">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hotel_booking">
+                    <h2>Hotel Booking</h2>
+                    <img src="hotel.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hotel_booking">
+                    <h2>Travels & Tours</h2>
+                    <img src="tour.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="hotel_booking">
+                    <h2>Hajj</h2>
+                    <img src="haaj.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="hotel_booking">
+                    <h2>Umrah</h2>
+                    <img src="umrah.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="hotel_booking">
+                    <h2>VISA</h2>
+                    <img src="visa.png" class="img-responsive" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <br><br>
 
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div id="footer"></div>
+
+    <script type="text/javascript" src="js/Gallery.js"></script>
 </body>
+
 </html>
